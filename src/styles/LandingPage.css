@@ -1,0 +1,45 @@
+.landing-page{
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-page-text{
+    text-align: left;
+    color: white;
+}
+
+.landing-page-text p{
+    font-size: 35px;
+}
+
+.landing-page-text h1{
+    font-size: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    animation: typing 4s steps(35, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: orange;
+    }
+  }
