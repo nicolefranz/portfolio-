@@ -1,45 +1,62 @@
-.landing-page{
-    background-image: url(../assets/bg.png);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.landing-page {
+  background-image: url(../assets/bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
 }
 
-.landing-page-text{
-    text-align: left;
-    color: white;
+.landing-page-text {
+  margin-bottom: 20px;
+  text-align: left;
+  color: white;
 }
 
-.landing-page-text p{
-    font-size: 35px;
+.landing-page-text p {
+  font-size: 50px;
 }
 
-.landing-page-text h1{
-    font-size: 100px;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 0.15em solid orange;
-    animation: typing 4s steps(35, end), blink-caret 0.75s step-end infinite;
+.landing-page-text h1 {
+  font-size: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  animation: typing 4s steps(35, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
-    from {
+  from {
       width: 0;
-    }
-    to {
+  }
+  to {
       width: 100%;
-    }
   }
-  
-  @keyframes blink-caret {
-    from,
-    to {
+}
+
+@keyframes blink-caret {
+  from,
+  to {
       border-color: transparent;
-    }
-    50% {
-      border-color: orange;
-    }
   }
+  50% {
+      border-color: orange;
+  }
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row; /* Makes the images appear in a row */
+  align-items: center;
+  gap: 20px; /* Adds space between the images */
+  margin-top: 20px; /* Adds some space above the links */
+}
+
+.social-links a img {
+  width: 30px; /* Adjust the size as needed */
+  height: 30px; /* Adjust the size as needed */
+}
