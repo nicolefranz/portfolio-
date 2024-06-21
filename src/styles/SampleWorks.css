@@ -2,7 +2,7 @@
     background-image: url(../assets/sampleworks.png);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100%;
     align-items: center;
 }
 
@@ -33,11 +33,14 @@
 }
 
 .card {
-  max-width: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  flex: 0 1 calc(33.333% - 40px); 
+    max-width: calc(33.333% - 40px);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
 }
 
 .card:hover {
