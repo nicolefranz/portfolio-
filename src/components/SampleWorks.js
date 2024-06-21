@@ -4,6 +4,7 @@ import project1Img from '../assets/brgy-website.png';
 import project2Img from '../assets/airline.png'; 
 import project3Img from '../assets/cinema.png'; 
 import project4Img from '../assets/gym.png';
+import project5Img from '../assets/vault-app.png';
 
 const SampleWorks = () => {
     const projects = [
@@ -33,6 +34,13 @@ const SampleWorks = () => {
             imgSrc: project4Img,
             sourceCodeLink: 'https://github.com/nicolefranz/Gym-System',
         },
+        {
+            title: 'Vault : Encrypt & Decrypt Android Application',
+            description: 'Android application that securely encrypts and decrypts files to protect your sensitive data',
+            languages: 'Java',
+            imgSrc: project5Img,
+            sourceCodeLink: 'https://github.com/nicolefranz/Vault',
+        },
     ];
     
     return (
@@ -47,7 +55,7 @@ const SampleWorks = () => {
                             <p>{project.description}</p>
                             <p><strong>Languages: </strong>{project.languages}</p>
                             <a href={project.sourceCodeLink} target="_blank" rel="noopener noreferrer">
-                                <button className="source-code-btn">View Source Code</button>
+                                <button className="source-code-btn">View</button>
                             </a>
                         </div>
                     </div>
